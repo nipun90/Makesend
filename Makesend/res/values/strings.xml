@@ -4,5 +4,10 @@
     <string name="app_name">Makesend</string>
     <string name="action_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="login">Login</string>
+    <string name="shop">Shop</string>
+    <color name="cyan">#00a0e9</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#666666</color>
 
 </resources>
