@@ -55,8 +55,7 @@
 	        android:layout_width="match_parent"
 	        android:layout_height="match_parent"
 	        android:layout_marginTop="10dp"
-	        android:text="I'd like to make..."
-	        android:textColor="@color/gray"
+	        android:hint="I'd like to make..."
 	        android:gravity="top"
 	        android:layout_weight="1"
 	        android:background="@color/white"/>

@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="60dp"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+   	<TextView 
+   	    android:id="@+id/registerheader"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:background="@color/cyan"
+   	    android:text = "Register"
+   	    android:gravity="center"
+   	    android:textStyle="bold"
+   	    android:textColor="@color/white"
+   	    android:textSize="28sp"
+   	    />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    android:padding="5dp"
+	    android:background="@color/gray"
+	    android:weightSum="1"
+	    android:layout_marginTop="5dp">
+
+	    <LinearLayout
+	        android:id="@+id/content"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:background="@color/dgray"
+	        android:gravity="top"
+	        android:orientation="vertical"
+	        android:padding="10dp" >
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/fnametag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="First Name"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/fname"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:textSize="16sp" />
+"
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/lnametag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="Last Name"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/lname"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:textSize="16sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/saddresstag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="Street Address"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/saddress"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:textSize="16sp" />
+	        </LinearLayout>
+
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/citytag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="City"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/city"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:textSize="16sp" />
+	        </LinearLayout>
+
+	        <Spinner
+	            android:id="@+id/states"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:entries="@array/states"
+	            android:prompt="@string/stateprompt" 
+	        />
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/ziptag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="Zip Code"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/zip"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:inputType="number"
+	                android:textSize="16sp" />
+	        </LinearLayout>
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:weightSum="1" >
+
+	            <TextView
+	                android:id="@+id/emailtag"
+	                android:layout_width="135dp"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/leftround"
+	                android:text="Email"
+	                android:textColor="@color/black"
+	                android:textSize="16sp" />
+
+	            <EditText
+	                android:id="@+id/email"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:background="@drawable/rightround"
+	                android:gravity="left"
+	                android:textSize="16sp"
+	                android:inputType="textEmailAddress"/>
+	        </LinearLayout>
+	        <Button 
+   	    		android:id="@+id/register"
+   	    		android:layout_width="wrap_content"
+   	    		android:layout_height="wrap_content"
+   	    		android:background="@color/cyan"
+   	   			android:text = "Boom!"
+   	    		android:gravity="center"
+   	    		android:layout_marginTop="5dp"
+   	    		android:paddingLeft="20dp"
+   	    		android:paddingRight="20dp"
+   	    		android:layout_gravity="center_horizontal"
+   	    		android:textStyle="bold"
+   	    		android:textColor="@color/white"
+   	    		android:textSize="24sp"
+   	    	/>
+	    </LinearLayout>
+
+	    <LinearLayout 
+	        android:layout_width="wrap_content"
+	        android:layout_height="0dp"
+	        android:orientation="vertical"
+	        android:background="@color/gray"
+	        android:layout_marginTop="5dp"
+	        android:gravity="center"
+	        android:layout_weight="1"
+	        android:layout_gravity="center">
+	        <TextView 
+	            android:layout_height="wrap_content"
+	            android:layout_width="wrap_content"
+	            android:text="or"
+	            android:textColor="@color/white"
+	            android:textSize="22sp"
+	            android:textStyle="bold"
+	            android:layout_gravity="center"
+	            android:gravity="center"
+	         />
+			<ImageButton 
+			    android:layout_marginTop="15dp"
+			    android:id="@+id/fregister"
+			    android:layout_width="180dp"
+			    android:layout_height="30dp"
+			    android:src="@drawable/facebook"
+			    android:background="@color/gray"
+			    android:padding="0dp"
+			    android:scaleType="fitXY"
+			    android:layout_gravity="center"
+			    android:gravity="center"
+			/>"
+	        
+	    </LinearLayout>
+	    
+	</LinearLayout>
+
+</LinearLayout>
+
