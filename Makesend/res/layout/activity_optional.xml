@@ -1,0 +1,189 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="0dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="60dp"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+   	<TextView 
+   	    android:id="@+id/optionalheader"
+   	    android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:background="@color/cyan"
+   	    android:text = "Optional Information"
+   	    android:gravity="center"
+   	    android:textStyle="bold"
+   	    android:textColor="@color/white"
+   	    android:textSize="28sp"
+   	    />
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_weight="1"
+	    android:orientation="vertical"
+	    android:padding="5dp"
+	    android:background="@color/gray"
+	    android:weightSum="5"
+	    android:layout_marginTop="5dp">
+
+	    <LinearLayout
+	        android:id="@+id/content"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:background="@color/dgray"
+	        android:gravity="top"
+	        android:orientation="vertical"
+	        android:padding="10dp"
+	        android:layout_weight="4" >
+			<LinearLayout 
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:weightSum="2">
+			    <TextView 
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:text="Is it a file or a print?"
+			        android:textSize="18sp"
+			        android:textColor="@color/white"
+			        android:layout_weight="1"/>
+			    <RadioGroup 
+    				android:layout_width="0dp"
+    				android:layout_height="wrap_content"
+    				android:orientation="horizontal"
+    				android:layout_weight="1"
+    
+    				>
+   					<RadioButton android:id="@+id/isfile"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:scaleX="0.7"
+        				android:scaleY="0.7"
+        			/>
+   					<TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="File"
+			        android:textSize="18sp"
+			        android:textColor="@color/white"
+			        />
+    				<RadioButton android:id="@+id/isprint"
+        				android:layout_width="wrap_content"
+        				android:layout_height="wrap_content"
+        				android:scaleX="0.7"
+        				android:scaleY="0.7"
+        			/>
+    				<TextView 
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="Print"
+			        android:textSize="18sp"
+			        android:textColor="@color/white"/>
+				</RadioGroup>
+			</LinearLayout>
+	        <LinearLayout
+	        	android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:layout_marginTop="5dp"
+	        	android:orientation="horizontal">
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="How many?"
+	                android:textColor="@color/white"
+	                android:textSize="18sp"
+	            />
+	            <EditText 
+	                android:id="@+id/count"
+	                android:background="@color/gray"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:textColor="@color/white"
+	                android:textSize="18sp"/>
+	        </LinearLayout>
+	        <TextView 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:text="What is it for?(max. 1000 characters)"
+	            android:textSize="18sp"
+	            android:textColor="@color/white"/>
+	        <EditText 
+	            android:layout_width="match_parent"
+	            android:layout_height="100dp"
+	            android:layout_marginTop="5dp"
+	            android:textColor="@color/white"
+	            android:background="@color/gray"
+	            android:gravity="top"
+	            />
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	         >
+	            <TextView 
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="What is your budget?"
+	                android:textSize="18sp"
+	                android:textColor="@color/white"/>
+	            <EditText 
+	                android:id="@+id/budget"
+	                android:layout_width="100dp"
+	                android:layout_height="wrap_content"
+	                android:textSize="18sp"
+	                android:text="$"
+	                android:textColor="@color/white"
+	                android:background="@color/gray"/>
+	        </LinearLayout>
+	        <LinearLayout 
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:orientation="horizontal"
+	            android:gravity="center">
+	        <LinearLayout 
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical">
+	        	<TextView 
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	            	android:text="Want a discount?"
+	            	android:textColor="@color/white"
+	            	android:textSize="18sp"/>
+	        	<CheckBox 
+	            	android:id="@+id/discount"
+	            	android:layout_width="wrap_content"
+	            	android:layout_height="wrap_content"
+	           	 	android:text="Yes, offer for resale."
+	            	android:textColor="@color/white"
+	            	android:textSize="22sp"
+	            	android:scaleX="0.70"
+	            	android:scaleY="0.70"
+	            	android:layout_marginLeft="-40dp"
+	            	android:layout_marginTop="-7dp"/>
+	        </LinearLayout>
+	        <Button 
+	            android:id="@+id/skip"
+	            android:text="Skip"
+	            android:textSize="18sp"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:textColor="@color/white"
+	            android:background="@color/cyan"
+	            android:padding="5dp"/>
+	        </LinearLayout>
+	    </LinearLayout>
+
+	    
+	    
+	</LinearLayout>
+
+</LinearLayout>
+

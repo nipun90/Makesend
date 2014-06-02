@@ -30,6 +30,14 @@
             android:name="com.Makesend.makesend.Register"
             android:label="@string/title_activity_register" >
         </activity>
+        <activity
+            android:name="com.Makesend.makesend.Optional"
+            android:label="@string/title_activity_optional" >
+        </activity>
+        <activity
+            android:name="com.Makesend.makesend.Discuss"
+            android:label="@string/title_activity_discuss" >
+        </activity>
     </application>
 
 </manifest>
