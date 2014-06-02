@@ -11,27 +11,30 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-public class Optional extends Fragment {
+public class Home extends Fragment {
 
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState) {
-		View rootView = inflater.inflate(R.layout.fragment_optional, container, false);
-		Button skip = (Button)rootView.findViewById(R.id.skip);
-		skip.setOnClickListener(new Button.OnClickListener(){
+		View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+		Button register = (Button)rootView.findViewById(R.id.login);
+		register.setOnClickListener(new Button.OnClickListener(){
 
 			@Override
 			public void onClick(View arg0) {
-				Fragment fragment = new Discuss();
+				Fragment fragment = new Login();
 				FragmentManager fragmentManager = getFragmentManager();
 	            fragmentManager.beginTransaction()
 	                    .replace(R.id.frame_container, fragment).commit();
 	 
 	            // update selected item and title, then close the drawer
-	            MainActivity.mDrawerList.setItemChecked(1, true);
-	            MainActivity.mDrawerList.setSelection(1);
+	            MainActivity.mDrawerList.setItemChecked(2, true);
+	            MainActivity.mDrawerList.setSelection(2);
+
 			}});
 		return rootView;
 	}
+
+	
 
 }
