@@ -4,28 +4,38 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="0dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="60dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
     android:background="@color/white"
     tools:context=".MainActivity" >
-   	<TextView 
-   	    android:id="@+id/registerheader"
-   	    android:layout_width="match_parent"
-   	    android:layout_height="50dp"
-   	    android:background="@color/cyan"
-   	    android:text = "Register"
-   	    android:gravity="center"
-   	    android:textStyle="bold"
-   	    android:textColor="@color/white"
-   	    android:textSize="28sp"
-   	    />
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:paddingTop="65dp"
+        android:orientation="vertical"
+        android:background="@drawable/logo">
+   		<TextView 
+   	    	android:id="@+id/registerheader"
+   	    	android:layout_width="match_parent"
+   	    	android:layout_height="match_parent"
+   	    	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        	android:layout_marginRight="@dimen/activity_horizontal_margin"
+   	    	android:background="@color/cyan"
+   	    	android:text = "Register"
+   	    	android:gravity="center"
+   	    	android:textStyle="bold"
+   	    	android:textColor="@color/white"
+   	    	android:textSize="28sp"
+   	    	/>
+   	</LinearLayout>
 	<LinearLayout 
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_weight="1"
 	    android:orientation="vertical"
 	    android:padding="5dp"
+	    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
 	    android:background="@color/gray"
 	    android:weightSum="5"
 	    android:layout_marginTop="5dp">
@@ -145,7 +155,9 @@
 	            android:layout_width="wrap_content"
 	            android:layout_height="wrap_content"
 	            android:entries="@array/states"
-	            android:prompt="@string/stateprompt" 
+	            android:layout_marginTop="5dp"
+	            android:prompt="@string/stateprompt"
+	            android:background="@drawable/totalround" 
 	        />
 	        <LinearLayout
 	            android:layout_width="match_parent"

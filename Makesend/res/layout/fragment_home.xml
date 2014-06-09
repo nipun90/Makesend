@@ -4,34 +4,42 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:paddingBottom="0dp"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="60dp"
+    android:paddingLeft="0dp"
+    android:paddingRight="0dp"
     android:background="@color/white"
     tools:context=".MainActivity" >
-    <LinearLayout android:layout_width="fill_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0"
-        android:weightSum="2"
-        >
-		<Button android:id="@+id/login"
-		    android:layout_width="match_parent"
-		    android:layout_height="50dp"
-		    android:text="@string/login"
-		    android:textStyle="bold"
-		    android:fontFamily="calibri"
-		    android:layout_weight="1"
-		/>
-		<Button android:id="@+id/shop"
-		    android:layout_width="match_parent"
-		    android:layout_height="50dp"
-		    android:text="@string/shop"
-		    android:textStyle="bold"
-		    android:fontFamily="calibri"
-		    android:layout_weight="1"
-		/>	
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="vertical"
+        android:paddingTop="65dp"
+        android:background="@drawable/logo">
+    	<LinearLayout android:layout_width="fill_parent"
+        	android:layout_height="match_parent"
+        	android:orientation="horizontal"
+        	android:layout_gravity="center_horizontal"
+        	android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        	android:layout_marginRight="@dimen/activity_horizontal_margin"
+        	android:layout_weight="0"
+        	android:weightSum="2"
+        	>
+			<Button android:id="@+id/login"
+		    	android:layout_width="match_parent"
+		    	android:layout_height="match_parent"
+		    	android:text="@string/login"
+		    	android:textStyle="bold"
+		    	android:fontFamily="calibri"
+		    	android:layout_weight="1"
+			/>
+			<Button android:id="@+id/shop"
+		    	android:layout_width="match_parent"
+		   		android:layout_height="match_parent"
+		    	android:text="@string/shop"
+		    	android:textStyle="bold"
+		    	android:fontFamily="calibri"
+		    	android:layout_weight="1"
+			/>	
+    	</LinearLayout>
     </LinearLayout>
 	<LinearLayout 
 	    android:layout_width="fill_parent"
@@ -39,6 +47,8 @@
 	    android:layout_weight="1"
 	    android:orientation="vertical"
 	    android:padding="10dp"
+	    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
 	    android:background="@color/cyan"
 	    android:weightSum="2"
 	    android:layout_marginTop="5dp">
